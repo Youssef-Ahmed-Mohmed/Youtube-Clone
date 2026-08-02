@@ -1,0 +1,11 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px 16px;
+}
+
+.empty-state {
+  color: var(--text-secondary);
+  padding: 40px 0;
+  text-align: center;
+}
