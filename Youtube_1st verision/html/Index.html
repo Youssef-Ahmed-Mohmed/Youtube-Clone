@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/Logo/youtube.png">
+    <title>YouTube</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="menu-toggle" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" fill="currentColor" />
+            </svg>
+        </button>
+
+        <a href="Index.html">
+            <img src="../assets/Logo/logo.png" alt="Youtube logo" class="Youtube-logo">
+        </a>
+        <form class="search-bar">
+            <input class="search-input" placeholder="search" aria-label="search">
+            <button type="submit" class="search-btn">
+                <img src="../assets/Svg/magnify.svg" />
+            </button>
+        </form>
+        <div class="menu-icons">
+            <a href="#">
+                <img src="../assets/Svg/video-plus.svg" />
+            </a>
+            <a href="#">
+                <img src="../assets/Svg/bell.svg" />
+            </a>
+            <a href="#">
+                <img src="../assets/Svg/apps.svg" />
+            </a>
+            <a href="#">
+                <img class="menu-channel-icon" src="https://picsum.photos/36/36?random=1" alt="channel icon">
+            </a>
+        </div>
+    </header>
+
+    <div class="page-body">
+
+        <aside class="sidebar">
+            <a href="Index.html" class="sidebar-item sidebar-item--active">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Home</span>
+            </a>
+            <a href="shorts.html" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M10 15l5.19-3L10 9v6zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Shorts</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 4h16v2H4zm2 4h12l-1 10H7L6 8z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Subscriptions</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h10v2H4z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Library</span>
+            </a>
+
+            <span class="sidebar-divider"></span>
+
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M13 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3zm0 4l4 4-4 4V7z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">History</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Your videos</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 4h12v16l-6-4-6 4V4z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Watch later</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 21s-7.5-4.6-10-9.2C.6 8.3 2.6 5 6 5c2 0 3.4 1 4 2.3C10.6 6 12 5 14 5c3.4 0 5.4 3.3 4 6.8C19.5 16.4 12 21 12 21z"
+                        fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Liked videos</span>
+            </a>
+        </aside>
+
+        <div class="main-content">
+            <div class="categories">
+                <section class="category-section">
+                    <button class="category active">All</button>
+                    <button class="category">Sports</button>
+                    <button class="category">Podcast</button>
+                    <button class="category">Vews</button>
+                    <button class="category">html</button>
+                    <button class="category">Ai</button>
+                    <button class="category">English</button>
+                    <button class="category">Favourits</button>
+                    <button class="category">Vibe coding</button>
+                    <button class="category">Football</button>
+                    <button class="category">Design</button>
+                </section>
+            </div>
+
+            <div class="videos">
+                <section class="video-section">
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=CMBE_cswtXA" target="_blank" class="thumbnail"
+                            data-duration="3:33">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/CMBE_cswtXA/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">ازاي تبدء بزنس </a>
+                            <a href="#" class="video-channel-name">Wael freelance</a>
+                            <div class="video-metadata">
+                                <span>12K views</span>
+                                •
+                                <span>1 year ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://youtu.be/FPnDFcJ_mN4?si=dK_-oXcv8AnIqW0L" target="_blank" class="thumbnail"
+                            data-duration="10:20">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/FPnDFcJ_mN4/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">لقاء مع اسر ياسن</a>
+                            <a href="#" class="video-channel-name">AB-talks</a>
+                            <div class="video-metadata">
+                                <span>100k views</span>
+                                •
+                                <span>2 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://youtu.be/DUhb9B6rgGo?si=Pcazzn6ZQw5JQHat" target="_blank" class="thumbnail"
+                            data-duration="10:20">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/DUhb9B6rgGo/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">حكايه اشهر جرافيك دزاين ف مصر </a>
+                            <a href="#" class="video-channel-name">G-Talks</a>
+                            <div class="video-metadata">
+                                <span>555k views</span>
+                                •
+                                <span>3 month ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://youtu.be/v1_BdK8vjJ0?si=gWX9m5OM3muXVuNX" target="_blank" class="thumbnail"
+                            data-duration="1:00:24">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/v1_BdK8vjJ0/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">لقاء مع منى الشاذلي </a>
+                            <a href="#" class="video-channel-name">AB-talks</a>
+                            <div class="video-metadata">
+                                <span>2m views</span>
+                                •
+                                <span>3 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://youtu.be/Izdf8guwjFs?si=A2Urga9nwqGeuMJj" target="_blank" class="thumbnail"
+                            data-duration="1:12:20">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/Izdf8guwjFs/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">لقاء مع اشهر رائد اعمال </a>
+                            <a href="#" class="video-channel-name">G-Talks</a>
+                            <div class="video-metadata">
+                                <span>600k views</span>
+                                •
+                                <span>1 year ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://youtu.be/ifb9tmg-c98?si=pK2_7Z6FFi9bQQSN" target="_blank" class="thumbnail"
+                            data-duration="50:00">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/ifb9tmg-c98/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">عبر الاجيال</a>
+                            <a href="#" class="video-channel-name">E&</a>
+                            <div class="video-metadata">
+                                <span>12m views</span>
+                                •
+                                <span>9 month ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="thumbnail"
+                            data-duration="4:13">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">PSY - GANGNAM STYLE</a>
+                            <a href="#" class="video-channel-name">officialpsy</a>
+                            <div class="video-metadata">
+                                <span>5B views</span>
+                                •
+                                <span>13 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" target="_blank" class="thumbnail"
+                            data-duration="4:42">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/kJQP7kiw5Fk/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">Luis Fonsi - Despacito ft. Daddy Yankee</a>
+                            <a href="#" class="video-channel-name">Luis Fonsi</a>
+                            <div class="video-metadata">
+                                <span>8B views</span>
+                                •
+                                <span>9 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=XqZsoesa55w" target="_blank" class="thumbnail"
+                            data-duration="2:16">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/XqZsoesa55w/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">Baby Shark Dance</a>
+                            <a href="#" class="video-channel-name">Pinkfong Baby Shark</a>
+                            <div class="video-metadata">
+                                <span>15B views</span>
+                                •
+                                <span>8 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=RgKAFK5djSk" target="_blank" class="thumbnail"
+                            data-duration="3:57">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/RgKAFK5djSk/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">Wiz Khalifa - See You Again ft. Charlie Puth</a>
+                            <a href="#" class="video-channel-name">Wiz Khalifa</a>
+                            <div class="video-metadata">
+                                <span>6B views</span>
+                                •
+                                <span>10 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" target="_blank" class="thumbnail"
+                            data-duration="4:30">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/OPf0YbXqDm0/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">Mark Ronson - Uptown Funk ft. Bruno Mars</a>
+                            <a href="#" class="video-channel-name">Mark Ronson</a>
+                            <div class="video-metadata">
+                                <span>5B views</span>
+                                •
+                                <span>11 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-container">
+                        <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank" class="thumbnail"
+                            data-duration="3:54">
+                            <img class="thumbnail-image" src="https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg" />
+                        </a>
+                        <div class="video-bottom-section">
+                            <a href="#" class="video-title">Ed Sheeran - Shape of You</a>
+                            <a href="#" class="video-channel-name">Ed Sheeran</a>
+                            <div class="video-metadata">
+                                <span>6B views</span>
+                                •
+                                <span>9 years ago</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/pagescript.js"></script>
+</body>
+
+</html>

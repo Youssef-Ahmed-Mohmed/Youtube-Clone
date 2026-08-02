@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/page.css">
+    <link rel="stylesheet" href="../styles/shorts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/Logo/youtube.png">
+    <title>Shorts - YouTube</title>
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="header">
+        <button class="menu-toggle" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" fill="currentColor" />
+            </svg>
+        </button>
+
+        <a href="Index.html">
+            <img src="../assets/Logo/logo.png" alt="Youtube logo" class="Youtube-logo">
+        </a>
+
+        <form class="search-bar">
+            <input class="search-input" placeholder="search" aria-label="search">
+            <button type="submit" class="search-btn">
+                <img src="../assets/Svg/magnify.svg" alt="">
+            </button>
+        </form>
+
+        <div class="menu-icons">
+            <a href="#" aria-label="Create">
+                <img src="../assets/Svg/video-plus.svg" alt="">
+            </a>
+            <a href="#" aria-label="Notifications">
+                <img src="../assets/Svg/bell.svg" alt="">
+            </a>
+            <a href="#" aria-label="Apps">
+                <img src="../assets/Svg/apps.svg" alt="">
+            </a>
+            <a href="#" aria-label="Account">
+                <img class="menu-channel-icon" src="https://unsplash.it/36/36?gravity=center" alt="channel icon">
+            </a>
+        </div>
+    </header>
+
+    <div class="page-body">
+
+        <!-- ===== Sidebar ===== -->
+        <aside class="sidebar">
+            <a href="Index.html" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Home</span>
+            </a>
+            <a href="shorts.html" class="sidebar-item sidebar-item--active">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M10 15l5.19-3L10 9v6zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                        fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Shorts</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 4h16v2H4zm2 4h12l-1 10H7L6 8z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Subscriptions</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h10v2H4z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Library</span>
+            </a>
+
+            <span class="sidebar-divider"></span>
+
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M13 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3zm0 4l4 4-4 4V7z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">History</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Your videos</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path d="M4 4h12v16l-6-4-6 4V4z" fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Watch later</span>
+            </a>
+            <a href="#" class="sidebar-item">
+                <svg class="sidebar-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 21s-7.5-4.6-10-9.2C.6 8.3 2.6 5 6 5c2 0 3.4 1 4 2.3C10.6 6 12 5 14 5c3.4 0 5.4 3.3 4 6.8C19.5 16.4 12 21 12 21z"
+                        fill="currentColor" />
+                </svg>
+                <span class="sidebar-label">Liked videos</span>
+            </a>
+        </aside>
+
+        <div class="main-content">
+
+            <!-- ===== Shorts player ===== -->
+            <div class="main-content--shorts">
+                <section class="shorts-feed" data-shorts-feed>
+
+                    <article class="short-item">
+                        <iframe class="short-video"
+                            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?mute=1&loop=1&playlist=dQw4w9WgXcQ&rel=0"
+                            title="ازاي تبدء بزنس من الصفر" allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        <div class="short-info">
+                            <a href="#" class="short-channel">
+                                <img class="short-channel-avatar" src="https://picsum.photos/id/64/40/40" alt="">
+                                <span class="short-channel-name">Wael freelance</span>
+                                <button class="short-subscribe">Subscribe</button>
+                            </a>
+                            <p class="short-title">ازاي تبدء بزنس من الصفر 🚀</p>
+                        </div>
+                        <div class="short-actions">
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z" />
+                                </svg>
+                                <span>24K</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z" />
+                                </svg>
+                                <span>Dislike</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                                </svg>
+                                <span>812</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 12v7a2 2 0 002 2h12a2 2 0 002-2v-7M16 6l-4-4-4 4M12 2v13" />
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="short-item">
+                        <iframe class="short-video"
+                            src="https://www.youtube-nocookie.com/embed/9bZkp7q19f0?mute=1&loop=1&playlist=9bZkp7q19f0&rel=0"
+                            title="لقطة من لقاء اسر ياسن" allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        <div class="short-info">
+                            <a href="#" class="short-channel">
+                                <img class="short-channel-avatar" src="https://picsum.photos/id/91/40/40" alt="">
+                                <span class="short-channel-name">AB-talks</span>
+                                <button class="short-subscribe">Subscribe</button>
+                            </a>
+                            <p class="short-title">لقطة من لقاء اسر ياسن 🎙️</p>
+                        </div>
+                        <div class="short-actions">
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z" />
+                                </svg>
+                                <span>58K</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z" />
+                                </svg>
+                                <span>Dislike</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                                </svg>
+                                <span>1.2K</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 12v7a2 2 0 002 2h12a2 2 0 002-2v-7M16 6l-4-4-4 4M12 2v13" />
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="short-item">
+                        <iframe class="short-video"
+                            src="https://www.youtube-nocookie.com/embed/kJQP7kiw5Fk?mute=1&loop=1&playlist=kJQP7kiw5Fk&rel=0"
+                            title="حكاية اشهر جرافيك ديزاينر ف مصر"
+                            allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen
+                            loading="lazy"></iframe>
+                        <div class="short-info">
+                            <a href="#" class="short-channel">
+                                <img class="short-channel-avatar" src="https://picsum.photos/id/40/40/40" alt="">
+                                <span class="short-channel-name">G-Talks</span>
+                                <button class="short-subscribe">Subscribe</button>
+                            </a>
+                            <p class="short-title">حكاية اشهر جرافيك ديزاينر ف مصر 🎨</p>
+                        </div>
+                        <div class="short-actions">
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z" />
+                                </svg>
+                                <span>101K</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z" />
+                                </svg>
+                                <span>Dislike</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                                </svg>
+                                <span>3.4K</span>
+                            </button>
+                            <button class="short-action">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 12v7a2 2 0 002 2h12a2 2 0 002-2v-7M16 6l-4-4-4 4M12 2v13" />
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </article>
+
+                </section>
+
+                <div class="shorts-nav">
+                    <button class="shorts-nav-btn" data-shorts-prev aria-label="Previous short">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 15l-6-6-6 6" />
+                        </svg>
+                    </button>
+                    <button class="shorts-nav-btn" data-shorts-next aria-label="Next short">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ===== More Shorts carousel ===== -->
+            <div class="carousel carousel-vertical" data-carousel>
+                <div class="carousel-header">
+                    <h2 class="carousel-title">More Shorts</h2>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn carousel-btn-prev" data-carousel-prev aria-label="Previous">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" data-carousel-next aria-label="Next">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="carousel-viewport" data-carousel-viewport>
+                    <ul class="carousel-track" data-carousel-track>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="carousel-card-title"
+                                target="_blank" rel="noopener">ازاي تبدء بزنس</a>
+                            <span class="carousel-card-meta">24K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" class="carousel-card-title"
+                                target="_blank" rel="noopener">لقاء مع اسر ياسن</a>
+                            <span class="carousel-card-meta">58K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" class="carousel-card-title"
+                                target="_blank" rel="noopener">حكايه اشهر جرافيك دزاين</a>
+                            <span class="carousel-card-meta">101K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="carousel-card-title"
+                                target="_blank" rel="noopener">لقاء مع منى الشاذلي</a>
+                            <span class="carousel-card-meta">76K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/OPf0YbXqDm0/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" class="carousel-card-title"
+                                target="_blank" rel="noopener">لقاء مع اشهر رائد اعمال</a>
+                            <span class="carousel-card-meta">44K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/YQHsXMglC9A/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" class="carousel-card-title"
+                                target="_blank" rel="noopener">عبر الاجيال</a>
+                            <span class="carousel-card-meta">220K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=CevxZvSJLk8" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/CevxZvSJLk8/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=CevxZvSJLk8" class="carousel-card-title"
+                                target="_blank" rel="noopener">لحظات كوميدية</a>
+                            <span class="carousel-card-meta">89K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/60ItHLz5WEA/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" class="carousel-card-title"
+                                target="_blank" rel="noopener">تحدي اليوم</a>
+                            <span class="carousel-card-meta">312K likes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ===== Trending Shorts carousel ===== -->
+            <div class="carousel carousel-vertical" data-carousel>
+                <div class="carousel-header">
+                    <h2 class="carousel-title">Trending Shorts</h2>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn carousel-btn-prev" data-carousel-prev aria-label="Previous">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" data-carousel-next aria-label="Next">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="carousel-viewport" data-carousel-viewport>
+                    <ul class="carousel-track" data-carousel-track>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="carousel-card-title"
+                                target="_blank" rel="noopener">لحظة من مباراة الاهلي</a>
+                            <span class="carousel-card-meta">450K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=9bZkp7q19f0" class="carousel-card-title"
+                                target="_blank" rel="noopener">وصفة سريعة للفطار</a>
+                            <span class="carousel-card-meta">88K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk" class="carousel-card-title"
+                                target="_blank" rel="noopener">تريند الرقص الجديد</a>
+                            <span class="carousel-card-meta">1.1M likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="carousel-card-title"
+                                target="_blank" rel="noopener">نصيحة للمبرمجين الجدد</a>
+                            <span class="carousel-card-meta">67K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/OPf0YbXqDm0/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=OPf0YbXqDm0" class="carousel-card-title"
+                                target="_blank" rel="noopener">مقلب اليوم 😂</a>
+                            <span class="carousel-card-meta">2.3M likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/YQHsXMglC9A/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" class="carousel-card-title"
+                                target="_blank" rel="noopener">جولة في اسكندرية</a>
+                            <span class="carousel-card-meta">140K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=CevxZvSJLk8" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/CevxZvSJLk8/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=CevxZvSJLk8" class="carousel-card-title"
+                                target="_blank" rel="noopener">تحدي 24 ساعة</a>
+                            <span class="carousel-card-meta">980K likes</span>
+                        </li>
+                        <li class="carousel-card">
+                            <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" class="carousel-thumb-wrap"
+                                target="_blank" rel="noopener">
+                                <img class="carousel-thumb" src="https://img.youtube.com/vi/60ItHLz5WEA/hqdefault.jpg"
+                                    alt="">
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=60ItHLz5WEA" class="carousel-card-title"
+                                target="_blank" rel="noopener">اغنية الصيف</a>
+                            <span class="carousel-card-meta">3.4M likes</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/pagescript.js"></script>
+</body>
+
+</html>

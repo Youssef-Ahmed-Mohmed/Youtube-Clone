@@ -1,0 +1,422 @@
+:root {
+    --header-h: 56px;
+    --sidebar-w: 72px;
+    --bg: #0f0f0f;
+    --surface: #181818;
+    --text: #fff;
+    --text-dim: #aaa;
+    --accent: #fff;
+    --carousel-gap: 32px;
+    /* <-- wide gap between carousel cards */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===== Header ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-h);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 16px;
+    background: var(--bg);
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.menu-toggle {
+    color: var(--text);
+    padding: 8px;
+}
+
+.Youtube-logo {
+    height: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.search-input {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid #303030;
+    border-radius: 20px 0 0 20px;
+    padding: 8px 16px;
+    color: var(--text);
+}
+
+.search-btn {
+    background: #222;
+    border: 1px solid #303030;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    padding: 8px 16px;
+}
+
+.search-btn img {
+    width: 18px;
+    filter: invert(1);
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-icons img {
+    width: 22px;
+    filter: invert(1);
+}
+
+.menu-channel-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    filter: none;
+}
+
+/* ===== Page layout ===== */
+.page-body {
+    display: flex;
+    padding-top: var(--header-h);
+}
+
+.sidebar {
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-w);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+    gap: 4px;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    padding: 10px 4px;
+    border-radius: 8px;
+    color: var(--text-dim);
+}
+
+.sidebar-item:hover {
+    background: var(--surface);
+}
+
+.sidebar-item--active {
+    color: var(--text);
+}
+
+.sidebar-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.sidebar-label {
+    font-size: 10px;
+}
+
+.sidebar-divider {
+    display: block;
+    width: 70%;
+    height: 1px;
+    background: #303030;
+    margin: 8px 0;
+}
+
+.main-content {
+    margin-left: var(--sidebar-w);
+    width: calc(100% - var(--sidebar-w));
+    padding: 24px 24px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ===== Shorts feed (vertical snap scroll) ===== */
+.main-content--shorts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.shorts-feed {
+    width: 380px;
+    max-width: 100%;
+    height: calc(100vh - var(--header-h) - 48px);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    border-radius: 16px;
+    background: #000;
+
+    /* hide scrollbar, keep functionality */
+    scrollbar-width: none;
+}
+
+.shorts-feed::-webkit-scrollbar {
+    display: none;
+}
+
+.short-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+}
+
+.short-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    pointer-events: auto;
+}
+
+.short-info {
+    position: absolute;
+    left: 0;
+    right: 70px;
+    bottom: 16px;
+    padding: 0 16px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+}
+
+.short-channel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.short-channel-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.short-channel-name {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.short-subscribe {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 18px;
+    margin-left: 6px;
+}
+
+.short-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.short-actions {
+    position: absolute;
+    right: 10px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.short-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+}
+
+.short-action svg {
+    width: 26px;
+    height: 26px;
+}
+
+.short-action span {
+    font-size: 11px;
+}
+
+.shorts-nav {
+    position: absolute;
+    right: -56px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.shorts-nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.shorts-nav-btn:hover {
+    background: #303030;
+}
+
+.shorts-nav-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ===== Carousels (infinite loop, wide gap) ===== */
+.carousel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.carousel-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.carousel-btn:hover {
+    background: #303030;
+}
+
+.carousel-viewport {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track {
+    display: flex;
+    gap: var(--carousel-gap);
+    /* <-- wide spacing between cards */
+    list-style: none;
+    margin: 0;
+    padding: 0 4px;
+    width: max-content;
+}
+
+.carousel-card {
+    width: 180px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.carousel-thumb-wrap {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 9 / 16;
+    background: #000;
+}
+
+.carousel-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-card-title {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.carousel-card-meta {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--text-dim);
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
